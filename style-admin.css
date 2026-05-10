@@ -1,0 +1,355 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #eef2f3, #8e9eab);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Header */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2e3b4e;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+/* Dashboard Styling */
+.dashboard {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ddd;
+}
+
+.dashboard:hover {
+    transform: scale(1.02);
+}
+
+/* Button Styling */
+.btn {
+    background: linear-gradient(45deg, #007bff, #004085);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #0056b3, #004085);
+    transform: scale(1.05);
+}
+
+/* Add Task Button */
+.add-task-btn {
+    background: linear-gradient(45deg, #28a745, #218838);
+    margin-bottom: 20px;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    float: right;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(45deg, #c82333, #9a2e2e);
+    transform: scale(1.05);
+}
+
+/* Task List Table */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.task-table th, .task-table td {
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+.task-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.task-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.task-table tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.task-table tr:hover {
+    background-color: #e9ecef;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.task-table td {
+    font-weight: 500;
+    color: #555;
+}
+
+.task-table td, .task-table th {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Password Reset Table */
+.password-reset-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.password-reset-table th, .password-reset-table td {
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+.password-reset-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.password-reset-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.password-reset-table tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.password-reset-table tr:hover {
+    background-color: #e9ecef;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.password-reset-table td {
+    font-weight: 500;
+    color: #555;
+}
+
+.password-reset-table td, .password-reset-table th {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Action Buttons */
+.password-reset-table .action-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.password-reset-table .action-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Section Titles */
+h2 {
+    font-size: 32px;
+    color: #2e3b4e;
+    margin-top: 40px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Table Action Buttons */
+.manage-btn, .approve-btn, .reject-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.manage-btn {
+    background-color: #ffc107;
+    color: white;
+    font-weight: 600;
+}
+
+.manage-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.approve-btn {
+    background-color: #28a745;
+    color: white;
+    font-weight: 600;
+}
+
+.approve-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.reject-btn {
+    background-color: #dc3545;
+    color: white;
+    font-weight: 600;
+}
+
+.reject-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2e3b4e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .dashboard {
+        padding: 20px;
+    }
+
+    .task-table, .password-reset-table {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .manage-btn, .approve-btn, .reject-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Filter Form Styling */
+form {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+form label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+form select {
+    padding: 5px 10px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.filter-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}

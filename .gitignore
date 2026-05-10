@@ -1,0 +1,11 @@
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+student_record_system
+build/
+cmake-build-*/
+.DS_Store

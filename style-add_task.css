@@ -1,0 +1,77 @@
+/* General styling for the form container */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form elements */
+form input[type="text"],
+form input[type="date"],
+form textarea,
+form select,
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling for placeholders */
+form input::placeholder,
+form textarea::placeholder {
+    color: #888;
+}
+
+/* Button styling */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for button */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Style for the textarea for a better look */
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Optional heading styling */
+form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Label styling for a polished look */
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Small spacing around form elements for better readability */
+form input,
+form textarea,
+form select,
+form button {
+    margin-bottom: 15px;
+}
